@@ -31,7 +31,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Linear icon"
-				src="/src/public/images/ball.png"
+				src="/images/ball.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=L")}
 			/>
 		),
@@ -42,7 +42,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="GitHub icon"
-				src="/src/public/images/gith.png"
+				src="/images/gith.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=GH")}
 			/>
 		),
@@ -53,7 +53,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Cloud icon"
-				src="/src/public/images/cloud.png"
+				src="/images/cloud.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=C")}
 			/>
 		),
@@ -64,7 +64,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Postman icon"
-				src="/src/public/images/unk.png"
+				src="/images/unk.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=P")}
 			/>
 		),
@@ -75,7 +75,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Notion icon"
-				src="/src/public/images/prism.png"
+				src="/images/prism.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=N")}
 			/>
 		),
@@ -86,7 +86,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Google icon"
-				src="/src/public/images/goog.png"
+				src="/images/goog.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=G")}
 			/>
 		),
@@ -97,7 +97,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Railway icon"
-				src="/src/public/images/verc.png"
+				src="/images/verc.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=R")}
 			/>
 		),
@@ -108,7 +108,7 @@ const toolIcons = [
 			<img
 				className="w-6 h-6 object-contain invert"
 				alt="Figma icon"
-				src="/src/public/images/figm.png"
+				src="/images/figm.png"
 				onError={(e) => (e.target.src = "https://via.placeholder.com/24/FFFFFF/000000?text=F")}
 			/>
 		),
