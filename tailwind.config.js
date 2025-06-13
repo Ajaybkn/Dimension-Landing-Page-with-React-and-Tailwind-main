@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
@@ -11,6 +10,20 @@ export default {
 			},
 			fontFamily: {
 				sans: ["Onest", "sans-serif"],
+			},
+			keyframes: {
+				glowOrbit: {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(360deg)" },
+				},
+				glowOrbitReverse: {
+					"0%": { transform: "rotate(360deg)" },
+					"100%": { transform: "rotate(0deg)" },
+				},
+			},
+			animation: {
+				glowOrbit: "glowOrbit 6s linear infinite",
+				glowOrbitReverse: "glowOrbitReverse 6s linear infinite",
 			},
 		},
 	},
