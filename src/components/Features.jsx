@@ -243,7 +243,7 @@ const MainContentSection = () => {
 						</div>
 					</div>
 
-					<div className="relative w-full h-[359px] mt-4 rounded-[10.15px] overflow-hidden border-[#1c1d36] border">
+					<div className="relative w-full h-[359px] mt-4 rounded-[10.15px] overflow-hidden border-[#1c1d36] border bg-[#1C1D36] opacity-60 ">
 						<div className="absolute w-full h-full flex items-center justify-center central-anim">
 							{/* Central Logo */}
 							<div className="w-16 h-16 bg-gradient-to-br rounded-full flex items-center justify-center z-10">
@@ -255,7 +255,7 @@ const MainContentSection = () => {
 							</div>
 
 							{/* Rotating Icons */}
-							<div className="absolute w-48 h-48 animate-spin-slow">
+							<div className="absolute w-48 h-52 animate-spin-slow">
 								{toolIcons.map((tool, index) => {
 									const angle = (index / toolIcons.length) * 360; // Calculate angle for each icon
 									const radius = 96; // Radius of the circular path (half of w-48)
@@ -294,7 +294,7 @@ const MainContentSection = () => {
 // Parent Component to Combine Both
 const CollaborateAndTools = () => {
 	return (
-		<section className="py-20 px-6 bg-gray-900">
+		<section className="py-20 pl-32 ">
 			<div className="max-w-6xl mx-auto">
 				<h3 className="text-white mb-0 text-[48px] font-semibold">
 					Build software{" "}
@@ -303,7 +303,7 @@ const CollaborateAndTools = () => {
 					</span>
 				</h3>
 				<p className="mb-[90px] text-[#999DB6] text-[18px] font-medium">The most complete developer experience.</p>
-				<div className="grid md:grid-cols-2 gap-12 items-start">
+				<div className="grid md:grid-cols-2 gap-6 items-start">
 					{/* Left Side: Features */}
 					<Features />
 

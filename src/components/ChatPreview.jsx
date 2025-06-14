@@ -47,10 +47,10 @@ const ChatPreview = () => {
 		<section className="px-6 pb-20 max-w-6xl mx-auto">
 			<div className="relative">
 				{/* Main div with background and blur */}
-				<div ref={containerRef} className="bg-gray-900/50 backdrop-blur-sm rounded-2xl overflow-hidden">
+				<div ref={containerRef} className=" backdrop-blur-sm rounded-2xl overflow-hidden">
 					<div className="flex h-[500px]">
 						{/* Sidebar */}
-						<div className="w-64 bg-gray-900/80 border-r border-gray-800 opacity-25">
+						<div className="w-64  border-r border-gray-800 opacity-25">
 							<div className="p-4">
 								<div className="flex items-center space-x-2 mb-6">
 									<div className="w-6 h-6 bg-gradient-to-br from-pink-500 to-orange-500 rounded"></div>
@@ -79,7 +79,7 @@ const ChatPreview = () => {
 									<div className="ml-6 mt-2 space-y-2">
 										{["Tejas", "Ari", "Landon"].map((name) => (
 											<div key={name} className="flex items-center space-x-2">
-												<div className="w-6 h-6 bg-gray-600 rounded-full"></div>
+												<div className="w-6 h-6  rounded-full"></div>
 												<span className="text-sm text-gray-400 hover:text-white cursor-pointer">{name}</span>
 											</div>
 										))}
@@ -89,7 +89,7 @@ const ChatPreview = () => {
 						</div>
 
 						{/* Main Chat Area */}
-						<div className="flex-1 bg-gray-900/50 relative">
+						<div className="flex-1  relative">
 							<div className="p-4 border-b border-gray-800 opacity-25">
 								<div className="flex items-center justify-between">
 									<div className="flex items-center space-x-2">
@@ -100,7 +100,7 @@ const ChatPreview = () => {
 										<span className="text-sm text-gray-400 opacity-15">Members • 3</span>
 										<div className="flex -space-x-2">
 											{["Tejas", "Ari", "Landon"].map((name) => (
-												<div key={name} className="w-6 h-6 bg-gray-600 rounded-full border-2 border-gray-900"></div>
+												<div key={name} className="w-6 h-6  rounded-full border-2 border-gray-900"></div>
 											))}
 										</div>
 									</div>
@@ -226,7 +226,7 @@ const ChatPreview = () => {
 						</div>
 
 						{/* Right Sidebar */}
-						<div className="w-64 bg-gray-900/80 border-l border-gray-800 p-4">
+						<div className="w-64 border-l border-gray-800 p-4">
 							<div className="space-y-6">
 								<div>
 									<h3 className="font-medium text-white mb-3">Members • 3</h3>
@@ -282,7 +282,7 @@ const ChatPreview = () => {
 
 				{/* SVG Overlay for Border and LED Animation */}
 				<svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ overflow: "visible" }}>
-					<path ref={borderPathRef} className="stroke-gray-800" fill="none" strokeWidth="1" />
+					<path ref={borderPathRef} className="stroke-gray-900" fill="none" strokeWidth="1" />
 					<path
 						ref={ledPathRef}
 						className="stroke-orange-400"
