@@ -118,7 +118,7 @@ const toolIcons = [
 // Left Side Component (Features)
 const Features = () => {
 	return (
-		<div className="relative w-full max-w-[588px] h-[540px] rounded-[16.7px] overflow-hidden border-solid border border-[#1c1d36]">
+		<div className="relative w-full max-w-[588px] h-[540px] rounded-[16.7px] overflow-hidden border-solid border border-[#1c1d36] mb-10">
 			{/* Top section with title and floating icons */}
 			<div className="relative w-full pt-7 pl-7">
 				<div className="relative w-full h-[156px]">
@@ -158,7 +158,7 @@ const Features = () => {
 					{/* Blur effect */}
 					<div className="absolute w-[260px] h-[230px] top-[388px] left-[-197px] bg-[#ffffff30] blur-[244.48px]" />
 
-					<div className="relative w-full h-[366px]">
+					<div className="relative w-full h-[366px] group">
 						{/* Code editor image */}
 						<img
 							className="w-[521px] h-[259px] absolute top-0 right-0 object-cover"
@@ -167,26 +167,41 @@ const Features = () => {
 						/>
 
 						{/* Error highlight in code */}
-						<div className="absolute w-[188px] h-[25px] top-[58px] left-[310px] bg-[#ff00004f] rounded-lg border border-solid border-[#850622]" />
+						{/* <div className="absolute w-[188px] h-[25px] top-[58px] left-[300px] bg-[#ff00004f] rounded-lg border border-solid border-[#850622] " /> */}
+						<div className="relative group">
+							<div className="absolute w-[188px] h-[25px] top-[58px] left-[300px] bg-[#ff00004f] rounded-lg border border-solid border-[#850622] transition-all duration-300 group-hover:left-[103px] group-hover:w-[100px] group-hover:bg-[#00ff004f]" />
+						</div>
 
 						{/* User cursors */}
 						{userCursors.map((user, index) => (
 							<div
 								key={index}
-								className="absolute"
-								style={{
-									top: user.position.top,
-									left: user.position.left,
-									height: user.name === "Necati" ? "36px" : "37px",
-									width: user.name === "Necati" ? "86px" : "79px",
-								}}
+								className={`absolute transition-all duration-300 ${
+									user.name === "Necati"
+										? "left-[388px] group-hover:left-[200px] top-[86px] h-[36px] w-[86px]"
+										: user.name === "Tejas"
+										? "left-[84px] group-hover:left-[300px] top-[109px] h-[37px] w-[79px]"
+										: user.name === "Ogus"
+										? "left-[317px] group-hover:left-[150px] top-[173px] h-[37px] w-[79px]"
+										: ""
+								}`}
 							>
 								<div className="relative h-full">
 									<div
-										className="inline-flex items-center justify-center gap-2.5 px-4 py-1 absolute rounded-[70px] border-none"
+										// className="inline-flex items-center justify-center gap-2.5 px-4 py-1 absolute rounded-[70px] border-none"
+										className={`inline-flex items-center justify-center gap-2.5 px-4 py-1 absolute rounded-[70px] border-none transition-all duration-300
+  ${
+		user.name === "Necati"
+			? "left-[10px] group-hover:left-[5px]"
+			: user.name === "Tejas"
+			? "left-[11px] group-hover:left-[20px]"
+			: user.name === "Ogus"
+			? "left-[12px] "
+			: ""
+	}`}
 										style={{
 											top: user.name === "Necati" ? "11px" : "12px",
-											left: user.name === "Necati" ? "10px" : "11px",
+											// left: user.name === "Necati" ? "10px" : "11px",
 											background: user.background,
 										}}
 									>
