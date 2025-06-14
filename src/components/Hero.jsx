@@ -5,7 +5,7 @@ const Hero = () => {
 		<section className="relative overflow-visible isolate text-center py-24 px-6 max-w-7xl mx-auto">
 			{/* Background Circles */}
 			<div className="absolute inset-0 -z-10 flex items-center justify-center">
-				{/* Ellipse 1 with Superimposed Glow */}
+				{/* Ellipse 1 (No Glow Effect) */}
 				<div className="absolute w-[1200px] top-[10px]">
 					{/* Main Ellipse */}
 					<img src="images/Ellipse1.png" alt="Background Circle 1" className="w-full opacity-70" />
@@ -22,25 +22,19 @@ const Hero = () => {
 					/>
 				</div>
 
-				{/* Ellipse 2 - With Rotating Glow */}
+				{/* Ellipse 2 (Counterclockwise) */}
 				<div className="absolute w-[1000px] top-[150px] flex items-center justify-center">
-					<div className="absolute w-full h-full rounded-full animate-glowOrbit z-0 ">
-						<div className="w-full h-full relative ">
-							<div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full opacity-80 blur-2xl bg-gradient-to-tr from-orange-400 via-white to-pink-300 "></div>
-						</div>
-					</div>
+					<div className="absolute w-full h-full rounded-full animate-glowOrbit z-0 mb-5 "></div>
 					<img src="images/Ellipse1.png" alt="Background Circle 2" className="relative w-full opacity-30 z-10" />
+
+					{/* Rotating Glow (Fire) */}
+					<div className="absolute inset-0 animate-orbit-glow-reverse">
+						<div className="absolute left-1/2 top-[-50px] w-60 h-4 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-purple-700 to-red-600 opacity-90 blur-2xl" />
+					</div>
 				</div>
 
-				{/* Ellipse 3 with Superimposed Glow and Rotating Light */}
+				{/* Ellipse 3 (Clockwise) */}
 				<div className="absolute w-[900px] top-[350px] flex items-center justify-center">
-					{/* Rotating Glow Animation */}
-					<div className="absolute w-full h-full rounded-full animate-glowOrbitReverse z-0">
-						<div className="w-full h-full relative">
-							<div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full opacity-80 blur-2xl bg-gradient-to-tr from-white via-white to-blue-300"></div>
-						</div>
-					</div>
-
 					{/* Ellipse Base */}
 					<img src="images/Ellipse1.png" alt="Background Circle 3" className="relative w-full opacity-30 z-10" />
 
@@ -54,6 +48,11 @@ const Hero = () => {
 							WebkitMaskImage: "radial-gradient(circle at center, white 0%, transparent 100%)",
 						}}
 					/>
+
+					{/* Rotating Glow (Fire) */}
+					<div className="absolute inset-0 animate-orbit-glow">
+						<div className="absolute left-1/2 top-[-40px] w-48 h-5 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-purple-700 to-red-600 opacity-90 blur-2xl" />
+					</div>
 				</div>
 			</div>
 
