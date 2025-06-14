@@ -97,12 +97,45 @@ const Hero = () => {
 						className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2.5 sm:py-3 text-white placeholder-gray-400 focus:outline-none focus:border-pink-500 focus:ring-1 focus:ring-pink-500 transition-colors"
 						aria-label="Email address for waitlist"
 					/>
-					<button
-						className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-orange-400 text-white px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:opacity-90 transition-opacity whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-gray-900"
-						aria-label="Join waitlist"
-					>
-						Join waitlist
-					</button>
+					<div className="relative inline-block" style={{ width: "250px", height: "100px" }}>
+						{/* Button Image */}
+						<img
+							src="/images/button.png"
+							alt="Join waitlist"
+							className="w-full h-full object-contain cursor-pointer block"
+							id="led-button-img"
+						/>
+
+						{/* SVG LED Border */}
+						<svg
+							className="absolute inset-[-10px] w-full h-full pointer-events-none"
+							viewBox="0 0 400 120"
+							fill="none"
+							style={{ zIndex: 10 }}
+						>
+							<rect
+								x="15"
+								y="10"
+								width="392"
+								height="150"
+								rx="36"
+								stroke="#F8F8FF"
+								strokeWidth="1.5"
+								fill="none"
+								strokeDasharray="30 300"
+								strokeDashoffset="0"
+								style={{
+									filter: "drop-shadow(10px  10px 20px #F8F8FF)",
+									animation: "led-move 4s linear infinite",
+								}}
+							/>
+							<style>{`
+			@keyframes led-move {
+				100% { stroke-dashoffset: -460; }
+			}
+		`}</style>
+						</svg>
+					</div>
 				</div>
 			</div>
 		</section>
