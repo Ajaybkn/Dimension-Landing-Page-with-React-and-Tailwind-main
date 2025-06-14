@@ -294,8 +294,34 @@ const MainContentSection = () => {
 // Parent Component to Combine Both
 const CollaborateAndTools = () => {
 	return (
-		<section className="py-20 pl-32 ">
-			<div className="max-w-6xl mx-auto">
+		<section className=" pl-32 ">
+			<div>
+				<div className="">
+					<img src="/images/lines.png" alt="Dimension" />
+				</div>
+				<div className="relative bottom-[450px] right-0">
+					<div className="relative">
+						<img src="/images/dots1.png" alt="Dimension" className="your-existing-classes" aria-hidden="true" />
+						{/* Example: glowing dot at x=40px, y=30px */}
+						<div
+							className="absolute"
+							style={{
+								left: 40,
+								top: 30,
+								width: 16,
+								height: 16,
+								borderRadius: "50%",
+								background: "radial-gradient(circle, #f472b6 0%, transparent 70%)",
+								filter: "blur(2px)",
+								opacity: 0.8,
+								pointerEvents: "none",
+							}}
+						/>
+						{/* Repeat for more glowing dots */}
+					</div>
+				</div>
+			</div>
+			<div className="max-w-6xl mt-[-120px] mx-auto">
 				<h3 className="text-white mb-0 text-[48px] font-semibold">
 					Build software{" "}
 					<span className="bg-[linear-gradient(90deg,_#FFAC87_49.52%,_#FFDAA5_100%)] bg-clip-text text-transparent">

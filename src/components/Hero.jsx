@@ -35,7 +35,7 @@ const Hero = () => {
 
 					{/* Rotating Glow (Fire) */}
 					<div className="absolute inset-0 animate-orbit-glow-reverse">
-						<div className="absolute left-1/2 top-[-30px] sm:top-[-50px] w-40 sm:w-60 h-3 sm:h-4 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-purple-700 to-red-600 opacity-90 blur-2xl" />
+						<div className="absolute left-1/2 top-[-30px] sm:top-[-50px] w-40 sm:w-60 h-3 sm:h-4 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-700 to-red-200 opacity-90 blur-2xl" />
 					</div>
 				</div>
 
@@ -63,7 +63,7 @@ const Hero = () => {
 
 					{/* Rotating Glow (Fire) */}
 					<div className="absolute inset-0 animate-orbit-glow">
-						<div className="absolute left-1/2 top-[-30px] sm:top-[-40px] w-32 sm:w-48 h-4 sm:h-5 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-purple-700 to-red-600 opacity-90 blur-2xl" />
+						<div className="absolute left-1/2 top-[-30px] sm:top-[-40px] w-32 sm:w-48 h-4 sm:h-5 -translate-x-1/2 rounded-full bg-gradient-to-tr from-yellow-300 via-orange-700 to-red-600 opacity-90 blur-2xl" />
 					</div>
 				</div>
 			</div>
